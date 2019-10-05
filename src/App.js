@@ -1,13 +1,18 @@
 import React from 'react';
 import EmployeeList from './EmployeeList'
+import { Container } from 'semantic-ui-react'
+
 
 const App = () => {
   return (
     <>
-      <h1>Employee list</h1>
-      <section id="main">
-        <EmployeeList />
-      </section>
+      <Container>
+        <h1>Employee list</h1>
+        <section id="main">
+          <EmployeeList />
+        </section>
+      </Container>
+
     </>
   );
 }

@@ -21,8 +21,8 @@ describe('Displays list of employees', () => {
 
   it('displays a <ul>', () => {
     cy.get('section[id="main"]').within(() => {
-      cy.get('ul').should('have.length', 1)
-      cy.get('li').should('have.length', 5)
+      cy.get('div[role="list"]').should('have.length', 1)
+      cy.get('div[role="listitem"]').should('have.length', 5)
     })
   });
 
