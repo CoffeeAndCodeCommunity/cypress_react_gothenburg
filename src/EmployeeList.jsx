@@ -17,7 +17,6 @@ class EmployeeList extends Component {
   render() {
     let employeeListDisplay = this.state.employees.map((employee) => {
       return (
-        // <li key={employee.id}>{employee.email}</li>
         <List.Item key={employee.id}>
           <Image avatar src={employee.avatar} />
           <List.Content>

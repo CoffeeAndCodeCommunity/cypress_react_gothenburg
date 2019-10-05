@@ -2,7 +2,6 @@ describe('Displays list of employees', () => {
   beforeEach(() => {
     cy.request("https://reqres.in/api/users?per_page=5").then(
       response => {
-        // then use the response.body to write a fixture.
         cy.writeFile("cypress/fixtures/myRecordedResp.json", response.body);
       }
     );
@@ -25,5 +24,4 @@ describe('Displays list of employees', () => {
       cy.get('div[role="listitem"]').should('have.length', 5)
     })
   });
-
 });
